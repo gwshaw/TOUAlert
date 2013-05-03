@@ -1,0 +1,55 @@
+body
+{
+    width:300px;
+    height:640px;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:small;
+    display: block;
+}
+
+td
+{
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:x-small;
+    line-height:1.1em;
+}
+
+td.indent
+{
+    text-indent:1em;
+    padding: 0 1em 0 0;
+}
+
+/* Nav styles */
+
+#Nav-Seasons
+{
+    margin: 0 0 0 0;
+    padding: 0;
+    width: 300px;
+    height: 24px;
+    background-color:#00F;
+    color:#fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight:bold;
+}
+
+#Nav-Seasons ul
+{
+    margin: 0 6px 0 6px;
+    padding: 0;
+    list-style: none;
+}
+
+#Nav-Seasons ul li
+{
+    margin: 0;
+    padding: 0;
+    width: 96px;
+    height: 24px;
+    line-height: 24px;
+    float:left;
+    cursor:pointer;
+    font-size: 12px;
+}

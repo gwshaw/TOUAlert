@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<gadget>
+  <name>Time-of-Use Rate Alert</name>
+  <namespace>EngineeredDesign.Gadgets</namespace> -->
+  <version>1.0.0.0</version>
+  <author name="George Shaw">
+  </author>
+  <copyright>&#169; 2010 Engineered Design</copyright>
+  <description>Display Current Time-of-Use Electricity Rate</description>
+  <hosts>
+    <host name="sidebar">
+      <base type="HTML" apiVersion="1.0.0" src="TOUAlert.htm" />
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="1.0" />
+    </host>
+  </hosts>
+</gadget>
+

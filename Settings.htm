@@ -1,0 +1,192 @@
+<html>
+<head>
+    <link href="Settings.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="Settings.js"></script>
+</head>
+<body>  
+<div id="Nav-Seasons">
+    <span>Settings<br /></span>
+    <ul>
+        <li onClick="SETTINGS_Change_Section('Winter-Sec');">Winter</li>
+        <li onClick="SETTINGS_Change_Section('Summer-Sec');">Summer</li>
+        <li onClick="SETTINGS_Change_Section('Holiday-Sec');">Holiday</li>
+    </ul>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <td colspan=2>Default time-of-use is Off-Peak.<br />All entries are on 24 hour clock.<br /><br /></td>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td colspan=2 id="SettingsMsg" class="message"><br />No Message</td>
+        </tr>
+    </tfoot>
+    <tbody id="Winter-Sec">
+        <tr>
+            <td colspan=2>Winter starting date:
+                <select name="WinterStartMenu" autofocus="autofocus" size="1">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+                1st
+            </td>
+        </tr>
+        <tr>
+            <td colspan=1><b>Winter (M-F):</b></td>
+        </tr>
+        <tr>
+            <td class="indent">Partial Peak</td>
+            <td class="column">
+                <input name="MFWPPeakStartBox" type="text" size="2" maxlength="2" />:00 to
+                <input name="MFWPPeakEndBox" type="text" size="2" maxlength="2" />:00
+            </td>
+        </tr>
+        <tr>
+            <td class="indent">Peak</td>
+            <td class="column">none</td>
+        </tr>
+        <tr>
+            <td colspan=1><br /><b>Winter (Sat-Sun):</b></td>
+        </tr>
+        <tr>
+            <td class="indent">Partial Peak</td>
+            <td class="column">none</td>
+        </tr>
+        <tr>
+            <td class="indent">Peak</td>
+            <td class="column">none</td>
+        </tr>
+        <tr>
+            <td>
+                <br /><input value="Restore" type="button" onClick="SETTINGS_Winter_Restore();" />
+            </td>
+        </tr>
+    </tbody>
+    <tbody id="Summer-Sec">
+        <tr>
+            <td colspan=2>Summer starting date:
+                <select name="SummerStartMenu" autofocus="autofocus" size="1">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+                1st
+            </td>
+        </tr>
+        <tr>
+            <td colspan=1><b>Summer (M-F):</b></td>
+        </tr>
+        <tr>
+            <td class="indent">Partial Peak</td>
+            <td class="column">
+                <input name="MFSPPeak1StartBox" type="text" size="2" maxlength="2" />:00 to
+                <input name="MFSPPeak1EndBox" type="text" size="2" maxlength="2" />:00
+            </td>
+        </tr>
+        <tr>
+            <td class="indent">Peak</td>
+            <td class="column">
+                <input name="MFSPeakStartBox" type="text" size="2" maxlength="2" />:00 to
+                <input name="MFSPeakEndBox" type="text" size="2" maxlength="2" />:00
+            </td>
+        </tr>
+        <tr>
+            <td class="indent">Partial Peak</td>
+            <td class="column">
+                <input name="MFSPPeak2StartBox" type="text" size="2" maxlength="2" />:00 to
+                <input name="MFSPPeak2EndBox" type="text" size="2" maxlength="2" />:00
+            </td>
+        </tr>
+        <tr>
+            <td colspan=1><br /><b>Summer (Sat-Sun):</b></td>
+        </tr>
+        <tr>
+            <td class="indent">Partial Peak</td>
+            <td class="column">
+                <input name="SSSPPeakStartBox" type="text" size="2" maxlength="2" />:00 to
+                <input name="SSSPPeakEndBox" type="text" size="2" maxlength="2" />:00
+            </td>
+        </tr>
+        <tr>
+            <td class="indent">Peak</td>
+            <td class="column">none</td>
+        </tr>
+        <tr>
+            <td>
+                <br /><input value="Restore" type="button" onClick="SETTINGS_Summer_Restore();" />
+            </td>
+        </tr>
+    </tbody>
+    <tbody id="Holiday-Sec">
+        <tr>
+            <td colspan=1><b>Holidays:</b></td>
+        </tr>
+        <tr>
+            <td class="indent">Partial-Peak</td>
+            <td class="column">none</td>
+        </tr>
+        <tr>
+            <td class="indent">Peak</td>
+            <td class="column">none</td>
+        </tr>
+        <tr>
+            <td><br /></td>
+        </tr>
+        <tr>
+            <td class="indent">New Years Day</td>
+            <td id="htmlNewYearsDay" class="column">NewYearsDay</td>
+        </tr>
+        <tr>
+            <td class="indent">President's Day</td>
+            <td id="htmlPresDay" class="column">PresDay</td>
+        </tr>
+        <tr>
+            <td class="indent">Memorial Day</td>
+            <td id="htmlMemDay" class="column">MemDay</td>
+        </tr>
+        <tr>
+            <td class="indent">Independence Day</td>
+            <td id="htmlIndieDay" class="column">IndieDay</td>
+        </tr>
+        <tr>
+            <td class="indent">Labor Day</td>
+            <td id="htmlLaborDay" class="column">LaborDay</td>
+        </tr>
+        <tr>
+            <td class="indent">Veterans Day</td>
+            <td id="htmlVetsDay" class="column">VetsDay</td>
+        </tr>
+        <tr>
+            <td class="indent">Thanskgiving Day</td>
+            <td id="htmlThanksDay" class="column">ThanksDay</td>
+        </tr>
+        <tr>
+            <td class="indent">Christmas Day</td>
+            <td id="htmlXmasDay" class="column">XmasDay</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

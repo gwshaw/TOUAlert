@@ -1,0 +1,11 @@
+Highlight current season and start there when entering settings
+Add graphical background to settings menu
+Validate that hours make sense in ordering
+Detail current time area on display in small print i.e., "summer M-F"
+Change holiday check to string search
+Build display string in program rather than relying on toDateString
+
+Change name to Solar Monitor?
+Add button to store last date rained and last date washed
+Add timer to count days after last rain or last wash to remind to wash
+Add settings to edit last date rained or last date washed
